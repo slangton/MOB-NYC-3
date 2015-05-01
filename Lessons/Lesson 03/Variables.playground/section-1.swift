@@ -35,3 +35,43 @@ pi * radius * radius
 var area = pi * radius * radius
 println(area)
 
+
+var salary = 45000.0
+var taxRate = 0.24
+var incomePerYear = salary * (1.0 - taxRate)
+
+let monthsPerYear = 12.0
+
+var incomePerMonth = incomePerYear / monthsPerYear
+var rent = -800
+var electric = -80
+var phone = -300
+var studentLoans = -140
+var monthlyBurn = -500
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
