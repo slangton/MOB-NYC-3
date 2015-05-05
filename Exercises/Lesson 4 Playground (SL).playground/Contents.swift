@@ -8,7 +8,7 @@ let feetPerMeter = 3.28
 let feetPerFootballField = 300.0
 println(feetPerFootballField / feetPerMeter)
 
-let temp = 65
+let temp = 50
 temp <= 32
 
 if temp <= 20 {
