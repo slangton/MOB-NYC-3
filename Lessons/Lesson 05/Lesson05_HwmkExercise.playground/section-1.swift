@@ -2,6 +2,32 @@
 
 import UIKit
 
+// In class exercise
+
+let milesPerKilometer = 0.62
+var Kilometers : Double = 5 // or just say 5.0
+
+// interpolation
+println("\(milesPerKilometer) * \(Kilometers)")
+
+var result = milesPerKilometer * Kilometers
+
+result = 2.5
+
+if result < 2 {
+    println("I'm ok")
+    if result >= 2 && result < 3 {
+        println("You still can do it")
+    }
+}   else if result >= 3 {
+    println("I'm not ok")
+}
+
+
+
+
+
+
 /*
 BASICS OF FUNCTIONS
 
