@@ -24,11 +24,25 @@ if age >= 16 {
 
 // TODO: Print “you can drive” if the user is above 16 but below 18. It should print “You can drive and vote” if the user is above 18 but below 21. If the user is above 21, it should print “you can drive, vote and drink (but not at the same time!”.
 
-for (age >= 16; age>18){
+if (age >= 16 && age>18){
     println("you can drive")
 }
 
+if (age >= 18 && age > 21){
+    println("you can drive and vote")
+}
+
+if (age >= 21){
+    println("you can drive, vote and drink")
+}
+
 // TODO: Print the first fifty multiples of seven minus one (e.g. the first three multiples are 7, 14, 21. The first three multiples minus one are 6, 13, 20)
+
+let Fifty = 50
+
+for(var x = 1; x > Fifty; x++) {
+    
+}
 
 
 // TODO: Create a constant called number
@@ -38,9 +52,11 @@ let number = 123
 // TODO: Print whether the above number is even
 
 
+
 // TODO: Print out "Hello {whatever the value of name is}, your name is {however long the string name is} characters long!. Use countElements()
 
 // TODO: Print the sum of one hundred random numbers. Use rand() to generate random numbers.
+
 
 // Bonus TO DO: Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
 

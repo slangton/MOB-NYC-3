@@ -62,20 +62,52 @@ Final note: don't be afraid to have long function names, they'll help you in big
 // Create a function knockknock that just prints the line "Who's there?"
 // This function has no parameters nor a return value
 
+func knockKnock() {
+    println("Who's there")
+}
+
+knockKnock()
 
 // That was fun! Let's joke around and knock a few times more
+
+//knockKnock()
+//knockKnock()
+//knockKnock()
+
 // Write a function knockMultipleTimes that accepts one paramter
+
+
 // That parameter will be an int that let's us specify how many times we want to knock
+
 // Within the function we have a loop that runs x ammount of times that calls the knock knock function
 
+func knockMultipleTimes (timesToKnock: Int) {
+    for (var x = 1; x < timesToKnock; x++) {
+        knockKnock()
+    }
+}
+
+knockMultipleTimes(10)
 
 // HAHAHA, okay let's answer before the person behind the door goes nuts!
 // We will write a replyWhoIsHere function that accepts 2 parameters
 // Parameter one will be a firstname (String), and parameter two will be the homeCountry (also String)
 // The function will just print "It's me, {firstname}, from {homeCountry}"
 
+func say(firstname: String, homeCountry: String){
+    println("It's me, \(firstname), from \(homeCountry)")
+}
+
+say("Sean", "USA")
+
 
 // Cool that worked! Let's say we want to reply with our age instead of home country!
+
+func reply(firstname: String, age: String){
+    println("It's me, \(firstname), I'm \(age) years old")
+}
+say("Sean", "29")
+
 // We'll create a function calculateAge that accepts one parameter that will be yearOfBirth (Int)
 // The function will return the age (Int)
 // Use this code to do the calculation, don't worry about the code itself for now if you don't want to
@@ -88,6 +120,14 @@ let age = currentYear - yearOfBirth
 */
 // Return the age at the end of the function
 
+func calculateAge(yearOfBirth: Int) {
+    let currentDate = NSDate()
+    let currentCalendar = NSCalendar.currentCalendar()
+    let currentYear = currentCalendar.component(NSCalendarUnit.CalendarUnitYear, fromDate: currentDate)
+    let age = currentYear - yearOfBirth
+    return yearOfBirth(Int)
+}
+calculateAge("16")
 
 // Create a function tellNameAndAge that has two parameters
 // Parameter one is the name (String), parameter two is the yearOfBirth(Int)
